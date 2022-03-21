@@ -9212,12 +9212,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7495a488101043041bc62b7a4adfd9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  playerOneLife: 0
+  playerTwoLife: 0
   anim: {fileID: 72390950}
   pause: {fileID: 1223505314}
   audioSource: {fileID: 1025488234}
   enemyDeathSound: {fileID: 8300000, guid: cc5f37e4733fb444c824e5834c03352d, type: 3}
   timeOfInvicibility: 1
+  soloPlayerMode: 0
+  player2: {fileID: 2136778624}
 --- !u!82 &1025488234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10774,6 +10777,9 @@ MonoBehaviour:
   heart1: {fileID: 1416138006}
   heart2: {fileID: 1236732756}
   heart3: {fileID: 1761450271}
+  heart1P2: {fileID: 0}
+  heart2P2: {fileID: 0}
+  heart3P2: {fileID: 0}
   player: {fileID: 72390943}
   screenBorder_Left: {fileID: 813883186}
   screenBorder_Right: {fileID: 1793460204}
@@ -18509,7 +18515,7 @@ GameObject:
   - component: {fileID: 2136778625}
   m_Layer: 3
   m_Name: Player2
-  m_TagString: Player
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

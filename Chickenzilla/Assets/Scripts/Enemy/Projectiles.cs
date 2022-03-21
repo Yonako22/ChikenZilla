@@ -6,7 +6,13 @@ public class Projectiles : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            GameManager.instance.PlayerIsHit();
+            GameManager.instance.PlayerIsHit(true);
+            ScoreManager.instance.ComboOff();
+            Destroy(gameObject);
+        }
+        if (col.gameObject.CompareTag("Player2"))
+        {
+            GameManager.instance.PlayerIsHit(false);
             ScoreManager.instance.ComboOff();
             Destroy(gameObject);
         }

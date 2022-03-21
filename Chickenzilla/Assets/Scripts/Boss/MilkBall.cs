@@ -21,7 +21,11 @@ public class MilkBall : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            GameManager.instance.PlayerIsHit();
+            GameManager.instance.PlayerIsHit(true);
+        }
+        if (other.gameObject.CompareTag("Player2"))
+        {
+            GameManager.instance.PlayerIsHit(false);
         }
         Destroy(gameObject);
     }
