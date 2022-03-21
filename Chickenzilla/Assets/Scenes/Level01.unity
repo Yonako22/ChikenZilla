@@ -855,6 +855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60871074}
   - component: {fileID: 60871075}
+  - component: {fileID: 60871076}
   m_Layer: 3
   m_Name: Bec
   m_TagString: Untagged
@@ -928,6 +929,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &60871076
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60871073}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d30fe06870dd18f449b8c582d0ae1548, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &64365014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,6 +1255,7 @@ GameObject:
   - component: {fileID: 72390948}
   - component: {fileID: 72390949}
   - component: {fileID: 72390950}
+  - component: {fileID: 72390951}
   m_Layer: 3
   m_Name: Player1
   m_TagString: Player
@@ -1400,6 +1417,25 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!95 &72390951
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72390943}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41f39ede3b33c214ca0d61a4b18115f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &73881290
 GameObject:
   m_ObjectHideFlags: 0
@@ -15147,7 +15183,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.9730251, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18043,6 +18079,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2013491281}
   - component: {fileID: 2013491282}
+  - component: {fileID: 2013491283}
   m_Layer: 3
   m_Name: Bec
   m_TagString: Untagged
@@ -18116,6 +18153,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &2013491283
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013491280}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: d30fe06870dd18f449b8c582d0ae1548, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &2022792160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19092,6 +19144,7 @@ GameObject:
   - component: {fileID: 2136778627}
   - component: {fileID: 2136778626}
   - component: {fileID: 2136778625}
+  - component: {fileID: 2136778632}
   m_Layer: 3
   m_Name: Player2
   m_TagString: Player2
@@ -19253,6 +19306,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2136778632
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136778624}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13477c5ca31449c4f819c2c69702dfa6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &2139822571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6140249193381466826, guid: 82dc22534a7b0b14fb61edf23afa8c7a, type: 3}
