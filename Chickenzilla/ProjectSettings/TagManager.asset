@@ -15,6 +15,7 @@ TagManager:
   - Mouth
   - Eye
   - AttackBoss
+  - Player2
   layers:
   - Default
   - TransparentFX

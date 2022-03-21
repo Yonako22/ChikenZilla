@@ -9,7 +9,7 @@ public class GameOver : MonoBehaviour
     public AudioClip sound;
     void Update()
     {
-        if (GameManager.instance.life == 0)
+        if (GameManager.instance.playerOneLife == 0 || GameManager.instance.playerTwoLife == 0 )
         {
             Time.timeScale = 0;          
             audioSource.PlayOneShot(sound);

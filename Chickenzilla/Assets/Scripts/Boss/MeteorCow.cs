@@ -24,7 +24,12 @@ public class MeteorCow : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(col);
-            GameManager.instance.PlayerIsHit();
+            GameManager.instance.PlayerIsHit(true);
+        }
+        if (other.gameObject.CompareTag("Player2"))
+        {
+            Destroy(col);
+            GameManager.instance.PlayerIsHit(false);
         }
     }
 }
