@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 3762070996858683402}
   - component: {fileID: -5678321711404612092}
   - component: {fileID: -4208419857038368170}
+  - component: {fileID: 769669958}
   m_Layer: 6
   m_Name: PommeDeTire
   m_TagString: Enemy3
@@ -210,3 +211,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3.5
+--- !u!95 &769669958
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3762070996858683406}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5511c25ae7b2772419ab2db7a694a670, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
