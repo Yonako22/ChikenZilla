@@ -4,6 +4,7 @@ public class FireBall : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip fireBallSound;
+    public GameObject lifeUp;
 
 
     private void Awake()
@@ -32,6 +33,12 @@ public class FireBall : MonoBehaviour
         {
             ScoreManager.instance.Counter3();
             EnemyDying();
+        }
+        else if (col.gameObject.CompareTag("EnemyProjectile"))
+        {
+            Instantiate(lifeUp, col.transform.position, Quaternion.identity);
+            Debug.Log("LifeUp");
+            Destroy(col.gameObject);
         }
     }
 
