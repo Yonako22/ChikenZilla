@@ -72,14 +72,24 @@ public class GameManager : MonoBehaviour
      
   }
 
-  public void PlayerLifeUp()
+  public void PlayerLifeUp(bool isPlayer1)
   {
-      if (life<3)
+      if (isPlayer1)
       {
-          life++;
+          if (playerOneLife < 3)
+          {
+              playerOneLife++;
+          }
+      }
+      else
+      {
+          if (playerTwoLife < 3)
+          {
+              playerTwoLife++;
+          }
       }
   }
-
+  
   public void EnemyDeath()
   {
       audioSource.PlayOneShot(enemyDeathSound);
