@@ -74,10 +74,10 @@ public class GameManager : MonoBehaviour
 
   public void PlayerLifeUp()
   {
-      if (life<3)
-      {
-          life++;
-      }
+      // if (life<3)
+      // {
+      //     life++;
+      // }
   }
 
   public void EnemyDeath()

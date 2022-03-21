@@ -918,7 +918,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 4c593236cd72e57449693d2985185d5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c87b09dc269cbfa4a98a207f99bb2bed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1400,6 +1400,7 @@ MonoBehaviour:
   canShoot: 0
   canon: {fileID: 2013491281}
   fireBallPrefab: {fileID: 3418928713864900189, guid: b8107ad1f0d18d947a148d35fb792f10, type: 3}
+  fireBallPrefab2: {fileID: 7746581468944407803, guid: 4262dbda358bf7a4a95accc47d35b033, type: 3}
   fireBallForce: 10
   playerController: {fileID: 0}
 --- !u!111 &72390950
@@ -15184,7 +15185,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9730251, y: 1}
+    m_SensorSize: {x: 1.9768339, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18143,7 +18144,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 88bf83f70f1c3a04691ca66f6bbb96fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e6a954d5b1bac3b4bb37a7862031a519, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19185,6 +19186,7 @@ MonoBehaviour:
   canShoot: 0
   canon: {fileID: 60871074}
   fireBallPrefab: {fileID: 3418928713864900189, guid: b8107ad1f0d18d947a148d35fb792f10, type: 3}
+  fireBallPrefab2: {fileID: 7746581468944407803, guid: 4262dbda358bf7a4a95accc47d35b033, type: 3}
   fireBallForce: 10
   playerController: {fileID: 0}
 --- !u!114 &2136778627

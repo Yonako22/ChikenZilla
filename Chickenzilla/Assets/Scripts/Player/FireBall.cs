@@ -10,6 +10,7 @@ public class FireBall : MonoBehaviour
     private void Awake()
     {
         audioSource.PlayOneShot(fireBallSound);
+        gameObject.GetComponent<Animator>().SetBool("shot", true);
     }
 
     void OnCollisionEnter2D(Collision2D col)
