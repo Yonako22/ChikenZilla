@@ -11,10 +11,13 @@ public class Shooting : MonoBehaviour
 
     public float fireBallForce;
 
+    public PlayerController playerController;
+
     void Start()
     {
         canShoot = true;
         shootCooldown = shootingRate;
+        playerController = gameObject.GetComponent<PlayerController>();
     }
     
     void Update()
@@ -24,10 +27,21 @@ public class Shooting : MonoBehaviour
             shootCooldown -= Time.deltaTime;
         }
 
-        if (Input.GetButton("Fire1") && canShoot)
+        if (playerController.isPlayerOne)
         {
+            if (Input.GetButton("Fire1") && canShoot)
+            {
                 Shoot();
+            }
         }
+        else
+        {
+            if (Input.GetButton("Fire2") && canShoot)
+            {
+                Shoot();
+            } 
+        }
+     
     }
 
     private void Shoot()
