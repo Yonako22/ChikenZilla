@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7647719303923686396}
   - component: {fileID: 8593335876779766968}
   - component: {fileID: 5369650927463069755}
-  - component: {fileID: 677196271}
   m_Layer: 0
   m_Name: FireBall
   m_TagString: FireBall
@@ -139,6 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 5369650927463069755}
   fireBallSound: {fileID: 8300000, guid: 8e14e0ed422703647870f2308f66d282, type: 3}
+  lifeUp: {fileID: 8714415854175674655, guid: de5a4f4f6ad869b45a56ceff7987cf67, type: 3}
 --- !u!82 &5369650927463069755
 AudioSource:
   m_ObjectHideFlags: 0
@@ -235,22 +235,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &677196271
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3418928713864900189}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e682755741ab6344096875c54ea9b9db, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
