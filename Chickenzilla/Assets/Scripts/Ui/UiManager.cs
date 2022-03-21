@@ -55,32 +55,35 @@ public class UiManager : MonoBehaviour
             heart2.SetActive(false);
             heart3.SetActive(false);
         }
-        
-        if (GameManager.instance.playerOneLife == 3)
-        {
-            heart1P2.SetActive(true);
-            heart2P2.SetActive(true);
-            heart3P2.SetActive(true);
-        }
-        else if (GameManager.instance.playerTwoLife == 2)
-        {
-            heart1P2.SetActive(false);
-            heart2P2.SetActive(true);
-            heart3P2.SetActive(true);
-        }
-        else if (GameManager.instance.playerTwoLife == 1)
-        {
-            heart1P2.SetActive(false);
-            heart2P2.SetActive(false);
-            heart3P2.SetActive(true);
 
-        }
-        else if (GameManager.instance.playerTwoLife <= 0)
+        if (!GameManager.instance.soloPlayerMode)
         {
-            heart1P2.SetActive(false);
-            heart2P2.SetActive(false);
-            heart3P2.SetActive(false);
-        } 
+            if (GameManager.instance.playerTwoLife == 3)
+            {
+                heart1P2.SetActive(true);
+                heart2P2.SetActive(true);
+                heart3P2.SetActive(true);
+            }
+            else if (GameManager.instance.playerTwoLife == 2)
+            {
+                heart1P2.SetActive(false);
+                heart2P2.SetActive(true);
+                heart3P2.SetActive(true);
+            }
+            else if (GameManager.instance.playerTwoLife == 1)
+            {
+                heart1P2.SetActive(false);
+                heart2P2.SetActive(false);
+                heart3P2.SetActive(true);
+
+            }
+            else if (GameManager.instance.playerTwoLife <= 0)
+            {
+                heart1P2.SetActive(false);
+                heart2P2.SetActive(false);
+                heart3P2.SetActive(false);
+            } 
+        }
         AvancementBarProgression();
     }
 
