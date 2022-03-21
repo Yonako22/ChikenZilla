@@ -22,7 +22,7 @@ public class UiManager : MonoBehaviour
 
     float playerAvancement;
     public Slider barProgression;
-    
+
     private void Start()
     {
         startPos = screenBorder_Left.transform.position.x;
@@ -65,4 +65,6 @@ public class UiManager : MonoBehaviour
         playerAvancement = (playerPos - startPos) / endPos;
         barProgression.value = playerAvancement;
     }
+
+   
 }
