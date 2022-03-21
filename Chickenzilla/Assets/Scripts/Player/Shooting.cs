@@ -32,6 +32,7 @@ public class Shooting : MonoBehaviour
             if (Input.GetButton("Fire1") && canShoot)
             {
                 Shoot();
+                canon.gameObject.GetComponent<Animation>().Play("Shoot");
             }
         }
         else
@@ -39,6 +40,7 @@ public class Shooting : MonoBehaviour
             if (Input.GetButton("Fire2") && canShoot)
             {
                 Shoot();
+                canon.gameObject.GetComponent<Animation>().Play("Shoot2");
             } 
         }
      

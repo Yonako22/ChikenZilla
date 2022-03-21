@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 60871075}
   - component: {fileID: 60871076}
   m_Layer: 3
-  m_Name: Bec
+  m_Name: Bec2
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -918,7 +918,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 88bf83f70f1c3a04691ca66f6bbb96fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c593236cd72e57449693d2985185d5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -938,8 +938,9 @@ Animation:
   m_GameObject: {fileID: 60871073}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: d30fe06870dd18f449b8c582d0ae1548, type: 2}
-  m_Animations: []
+  m_Animation: {fileID: 7400000, guid: 9bf2e05ed896ea844be1482b89e32c79, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 9bf2e05ed896ea844be1482b89e32c79, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -18165,7 +18166,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: d30fe06870dd18f449b8c582d0ae1548, type: 2}
   m_Animations: []
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1001 &2022792160
