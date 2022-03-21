@@ -178,6 +178,7 @@ MonoBehaviour:
   canon: {fileID: 826778852}
   fireBallPrefab: {fileID: 3418928713864900189, guid: b8107ad1f0d18d947a148d35fb792f10, type: 3}
   fireBallForce: 10
+  playerController: {fileID: 0}
 --- !u!114 &589891971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   moveSpeed: 7
+  isPlayerOne: 0
 --- !u!58 &589891972
 CircleCollider2D:
   m_ObjectHideFlags: 0
