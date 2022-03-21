@@ -10971,6 +10971,8 @@ MonoBehaviour:
   dead: 0
   audioSource: {fileID: 1223505316}
   sound: {fileID: 8300000, guid: 91deab4b82192024da048ead9f722ebc, type: 3}
+  playerOne: {fileID: 72390943}
+  playerTwo: {fileID: 2136778624}
 --- !u!114 &1223505314
 MonoBehaviour:
   m_ObjectHideFlags: 0
