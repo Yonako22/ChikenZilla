@@ -4,13 +4,18 @@ public class GameManager : MonoBehaviour
 {
   public static GameManager instance;
   
-  public int life;
+  public int playerOneLife;
+  public int playerTwoLife;
+
   public Animation anim;
   public Pause pause;
   public AudioSource audioSource;
   public AudioClip enemyDeathSound;
   public float timeOfInvicibility;
   private float cooldown;
+
+  public bool soloPlayerMode;
+  public GameObject player2;
   
   private void Awake()
   {
@@ -25,9 +30,15 @@ public class GameManager : MonoBehaviour
 
   private void Start()
   {
-      life = 3;
+      playerOneLife = 3;
+      playerTwoLife = 3;
       pause.UnpausedTheGame();
       cooldown = timeOfInvicibility;
+
+      if (soloPlayerMode)
+      {
+          player2.SetActive(false);
+      }
   }
 
   private void Update()
@@ -38,14 +49,27 @@ public class GameManager : MonoBehaviour
       }
   }
 
-  public void PlayerIsHit()
+  public void PlayerIsHit(bool playerOneIsHit)
   {
-      if (cooldown <= 0f)
+      if (playerOneIsHit)
       {
-        life--;
-        anim.Play("DegatsPlayer");
-        cooldown = timeOfInvicibility;
+          if (cooldown <= 0f)
+          {
+              playerOneLife--;
+              anim.Play("DegatsPlayer");
+              cooldown = timeOfInvicibility;
+          }
       }
+      else
+      {
+          if (cooldown <= 0f)
+          {
+              playerTwoLife--;
+              anim.Play("DegatsPlayer");
+              cooldown = timeOfInvicibility;
+          }
+      }
+     
   }
 
   public void PlayerLifeUp()

@@ -9,6 +9,9 @@ public class UiManager : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
+    public GameObject heart1P2;
+    public GameObject heart2P2;
+    public GameObject heart3P2;
     public GameObject player;
     public GameObject screenBorder_Left;
     public GameObject screenBorder_Right;
@@ -28,18 +31,31 @@ public class UiManager : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.instance.life == 2)
+        if (GameManager.instance.playerOneLife == 2)
         {
             heart1.SetActive(false);
         }
-        else if (GameManager.instance.life == 1)
+        else if (GameManager.instance.playerOneLife == 1)
         {
             heart2.SetActive(false);
         }
-        else if (GameManager.instance.life <= 0)
+        else if (GameManager.instance.playerOneLife <= 0)
         {
             heart3.SetActive(false);
         }
+        
+        if (GameManager.instance.playerTwoLife == 2)
+        {
+            heart1P2.SetActive(false);
+        }
+        else if (GameManager.instance.playerTwoLife == 1)
+        {
+            heart2P2.SetActive(false);
+        }
+        else if (GameManager.instance.playerTwoLife <= 0)
+        {
+            heart3P2.SetActive(false);
+        } 
         AvancementBarProgression();
     }
 

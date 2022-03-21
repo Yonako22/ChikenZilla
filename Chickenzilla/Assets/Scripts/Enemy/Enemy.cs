@@ -10,9 +10,17 @@ public class Enemy : MonoBehaviour
         {
             GameManager.instance.EnemyDeath();
             Destroy(gameObject);
-            GameManager.instance.PlayerIsHit();
+            GameManager.instance.PlayerIsHit(true);
             ScoreManager.instance.ComboOff();
         }
+        if (other.gameObject.CompareTag("Player2"))
+        {
+            GameManager.instance.EnemyDeath();
+            Destroy(gameObject);
+            GameManager.instance.PlayerIsHit(false);
+            ScoreManager.instance.ComboOff();
+        }
+        
         else if (other.gameObject.CompareTag("FireBall"))
         {
             GameManager.instance.EnemyDeath();

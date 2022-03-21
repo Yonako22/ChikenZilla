@@ -28,7 +28,12 @@ public class MilkLaser : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             hitPlayer = true;
-            GameManager.instance.PlayerIsHit();
+            GameManager.instance.PlayerIsHit(true);
+        }
+        if (other.gameObject.CompareTag("Player2"))
+        {
+            hitPlayer = true;
+            GameManager.instance.PlayerIsHit(false);
         }
     }
 
