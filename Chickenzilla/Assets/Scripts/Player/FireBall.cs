@@ -37,7 +37,6 @@ public class FireBall : MonoBehaviour
         else if (col.gameObject.CompareTag("EnemyProjectile"))
         {
             Instantiate(lifeUp, col.transform.position, Quaternion.identity);
-            Debug.Log("LifeUp");
             Destroy(col.gameObject);
         }
     }
