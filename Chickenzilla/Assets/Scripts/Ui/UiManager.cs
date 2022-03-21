@@ -31,29 +31,54 @@ public class UiManager : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.instance.playerOneLife == 2)
+        if (GameManager.instance.playerOneLife == 3)
+        {
+            heart1.SetActive(true);
+            heart2.SetActive(true);
+            heart3.SetActive(true);
+        }
+        else if (GameManager.instance.playerOneLife == 2)
         {
             heart1.SetActive(false);
+            heart2.SetActive(true);
+            heart3.SetActive(true);
         }
         else if (GameManager.instance.playerOneLife == 1)
         {
+            heart1.SetActive(false);
             heart2.SetActive(false);
+            heart3.SetActive(true);
         }
         else if (GameManager.instance.playerOneLife <= 0)
         {
+            heart1.SetActive(false);
+            heart2.SetActive(false);
             heart3.SetActive(false);
         }
         
-        if (GameManager.instance.playerTwoLife == 2)
+        if (GameManager.instance.playerOneLife == 3)
+        {
+            heart1P2.SetActive(true);
+            heart2P2.SetActive(true);
+            heart3P2.SetActive(true);
+        }
+        else if (GameManager.instance.playerTwoLife == 2)
         {
             heart1P2.SetActive(false);
+            heart2P2.SetActive(true);
+            heart3P2.SetActive(true);
         }
         else if (GameManager.instance.playerTwoLife == 1)
         {
+            heart1P2.SetActive(false);
             heart2P2.SetActive(false);
+            heart3P2.SetActive(true);
+
         }
         else if (GameManager.instance.playerTwoLife <= 0)
         {
+            heart1P2.SetActive(false);
+            heart2P2.SetActive(false);
             heart3P2.SetActive(false);
         } 
         AvancementBarProgression();

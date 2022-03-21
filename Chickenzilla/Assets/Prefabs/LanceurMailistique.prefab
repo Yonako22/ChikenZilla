@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5258510544445862014}
   - component: {fileID: 5258510544445862015}
   - component: {fileID: 5258510544445862003}
-  - component: {fileID: 2566396429819286078}
+  - component: {fileID: 6969740054748855106}
   m_Layer: 6
   m_Name: LanceurMailistique
   m_TagString: Enemy
@@ -153,7 +153,7 @@ MonoBehaviour:
   canon: {fileID: 5258510545585069904}
   cornPrefab: {fileID: 3830081572289720321, guid: 0df22388168740240868b9747a59f784, type: 3}
   cornForce: 10
---- !u!95 &2566396429819286078
+--- !u!95 &6969740054748855106
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -163,7 +163,7 @@ Animator:
   m_GameObject: {fileID: 5258510544445862008}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4112500e5e8b81b468379347b49f3a52, type: 2}
+  m_Controller: {fileID: 9100000, guid: ed5d737aa4fd7d645a9bdc87b225f7ff, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

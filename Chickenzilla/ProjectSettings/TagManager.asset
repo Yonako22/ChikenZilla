@@ -16,6 +16,7 @@ TagManager:
   - Eye
   - AttackBoss
   - EnemyProjectile
+  - Player2
   layers:
   - Default
   - TransparentFX
@@ -27,8 +28,8 @@ TagManager:
   - Screen Border
   - CowBoss
   - Eye
-  - 
-  - 
+  - PowerUp
+  - Grond
   - 
   - 
   - 
